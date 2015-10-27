@@ -11,7 +11,7 @@ Naming classes is one of the most difficult things, certainly when you start sca
 - Element: a descendant (child) of the block. Notation ex. ``block__element``
 - Modifier: different state or version. Notation ex. ``block--modifier``
 
-We use double hyphens & underscores so we can still describe the block without having to use CamelCase. eg. ``modal-box__content--small``
+It uses double hyphens & underscores so we can still describe the block without having to use CamelCase. eg. ``modal-box__content--small``
 
 eg. BEM Notation
 ```
@@ -76,6 +76,7 @@ Utility classes are used for certain css properties that get used frequently. So
 
 
 ### State Classes
+
 
 For state changes of components, use ``is-state`` class names. These classes shouldn't be used for basic styling, but only for minor changes depending on the state, they should always be used as an adjoining class.
 
@@ -198,12 +199,14 @@ Place the media queries as close to the related css as possible (no unique respo
     - animations
     - reset
     - base
+
 - components
     - buttons
     - forms
     - modal
     - ...
+
 - pages
     - home
 
-style.scss  // Base file with imports
+- style.scss  // Base file with imports
