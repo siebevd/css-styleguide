@@ -3,7 +3,15 @@
 Style guide for writing CSS.
 Still a work in progress.
 
-## Naming
+1. [Naming](#naming)
+2. [Specific Class name prefixes](#classPrefixes)
+3. [Selector Blocks](#selector)
+4. [Basic Formatting](#formatting)
+5. [Comments](#comments)
+6. [Variable Naming](#variableNaming)
+7. [Organization](#organization)
+
+##<a name="naming"></a> Naming
 
 Naming classes is one of the most difficult things, certainly when you start scaling your project. Using the BEM - Block, Element, Modifier - system makes this a lot easier.
 
@@ -57,7 +65,7 @@ Thanks to BEM, the class names will make more sense and provide more context abo
 Also try to keep naming as short as possible while still keeping it understandable (eg. nav instead of navigation).
 
 
-## Specific Class name prefixes
+##<a name="classPrefixes"></a> Specific Class name prefixes
 
 To make the code clearer, there are some prefixes we use in front of the classnames.
 
@@ -89,7 +97,7 @@ They will mainly be used together with javascript. State Classes aren't be compo
 </div>
 ```
 
-## Selector Blocks
+##<a name="selector"></a>  Selector Blocks
 - include a space before the opening bracket of a selector.
 - end the selector block with a closing bracket on a seperate line.
 - if you have multiple selectors for a ruleset, use one selector per line.
@@ -108,7 +116,7 @@ button,
 ```
 
 
-## Basic Formatting
+##<a name="formatting"></a> Basic Formatting
 The code throughout the codebase should be written with the same formatting rules in mind too ensure that the code stays maintainable & easy to read.
 
 - only use double quotes to keep it consistent.
@@ -133,7 +141,7 @@ a {
 ```
 
 
-## Comments
+##<a name="comments"></a>  Comments
 Comments are strongly encouraged, to make sure that the written code will still be understandable for new developers. The style of the comments should be consistent throughout the whole codebase.
 There are 3 different types of comment blocks that you can use. Try to write them in full sentences, and don't simply retype the classname or component.
 
@@ -161,7 +169,7 @@ To clarify specific lines of code or write todo's
 ```
 
 
-## Variable Naming
+##<a name="variableNaming"></a>  Variable Naming
 Variable naming often runs into the same problem as class naming. So it's best to have some guidelines for them as well, to keep it consistent. Always start with the property it affects, then go for the value and add it an modifier (like with BEM) for specific use cases.
 User CamelCase notation for properties which have dashes in them (eg. font-family -> fontFamily)
 
@@ -183,7 +191,7 @@ $fontSize-regular: 16px;
 
 ```
 
-## Organization
+##<a name="organization"></a> Organization
 Organization is really important to keep a codebase maintainable. Organize sections of code by component, if you are using sass, keep a clear file structure. Try to do as much as possible component related (ex. buttons, modal box), and try to stay away from page specific code.
 
 
